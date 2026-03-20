@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css?ver=999">
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="images/logo.jpg" alt="Logo" width="80" height="80">
+        </a>
+        <h1>Grocery shop</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="carts.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <input type="text" id="search" placeholder="Search our products">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-shell">
+        <div class="page-intro">
+            <span class="eyebrow">Catalog</span>
+            <h2>Our products list</h2>
+            <p>Browse the full range with category filters and a more polished storefront layout.</p>
+        </div>
+
+        <div id="categories">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('All')">All</button>
+                <div class="dropdown-content">
+
+                </div>
+            </div>
+            <!-- ----Seafood---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Seafood')">Seafood</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Seafood', 'Fish')">Fish</button>
+                    <button onclick="filterSubcategory('Seafood', 'Prawns')">Prawns</button>
+                </div>
+            </div>
+
+            <!-- ----Meat---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Meat')">Meat</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Meat', 'Patties')">Patties</button>
+                    <button onclick="filterSubcategory('Meat', 'Steak')">Steak</button>
+                </div>
+            </div>
+
+            <!-- ----Dairy---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Dairy')">Dairy</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Dairy', 'Cheese')">Cheese</button>
+                </div>
+            </div>
+
+            <!-- ----Fruits---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Fruits')">Fruits</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Fruits', 'Oranges')">Oranges</button>
+                    <button onclick="filterSubcategory('Fruits', 'Bananas')">Bananas</button>
+                    <button onclick="filterSubcategory('Fruits', 'Peaches')">Peaches</button>
+                    <button onclick="filterSubcategory('Fruits', 'Grapes')">Grapes</button>
+                    <button onclick="filterSubcategory('Fruits', 'Apples')">Apples</button>
+                </div>
+            </div>
+
+            <!-- ----Drinks---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Drinks')">Drinks</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Drinks', 'Tea')">Tea</button>
+                    <button onclick="filterSubcategory('Drinks', 'Coffee')">Coffee</button>
+                </div>
+            </div>
+        
+            <!-- ----Desserts---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Desserts')">Desserts</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Desserts', 'Ice Cream')">Ice Cream</button>
+                    <button onclick="filterSubcategory('Desserts', 'Chocolate')">Chocolate</button>
+                </div>
+            </div>
+
+            <!-- ----Household---- -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Household')">Household</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Household', 'Medicine')">Medicine</button>
+                    <button onclick="filterSubcategory('Household', 'Soap')">Soap</button>
+                    <button onclick="filterSubcategory('Household', 'Garbage Bags')">Garbage Bags</button>
+                    <button onclick="filterSubcategory('Household', 'Cleaning')">Cleaning</button>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="filterCategory('Pets')">Pets</button>
+                <div class="dropdown-content">
+                    <button onclick="filterSubcategory('Pets', 'Dog')">Dog</button>
+                    <button onclick="filterSubcategory('Pets', 'Bird')">Bird</button>
+                    <button onclick="filterSubcategory('Pets', 'Cat')">Cat</button>
+                    <button onclick="filterSubcategory('Pets', 'PetFish')">PetFish</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="product-list"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Grocery Store</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
