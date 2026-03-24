@@ -4,7 +4,8 @@ Users can explore products by category, add them to a cart, update quantities, a
 
 The application focuses on usability, responsive design, and practical implementation of front-end and back-end integration.
 
-Browse products by category and subcategory
+Features
+- Browse products by category and subcategory
 - Search products with keyword suggestions
 - Add items to the shopping cart
 - Update item quantity or remove items
